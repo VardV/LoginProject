@@ -1,0 +1,16 @@
+
+<form>  
+    <div class="container">   
+        <label>{{ l_user }} </label>   
+        <input type="text" [(ngModel)]=username placeholder="Enter Username" name="username" required >  
+        <label>{{ l_pass}} </label>   
+        <input type="password" [(ngModel)]=pass placeholder="Enter Password" name="password" required>  
+        <button type="submit" (click)=login()>{{b_submit}}</button> 
+        <input type="checkbox" checked="checked"> Remember me    
+        <button type="button" class="cancelbtn" (click)=cancel()> {{b_cancel}}</button>   
+       
+    </div>   
+</form>
+
+
+
