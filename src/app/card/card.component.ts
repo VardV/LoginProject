@@ -1,5 +1,6 @@
 import { ValueConverter } from '@angular/compiler/src/render3/view/template';
 import {Component,OnInit} from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
     selector:'app-card',
@@ -14,7 +15,7 @@ export class CardComponent implements OnInit{
     b_cancel='Cancel';
     username='';
     pass='';
-
+    
 
   ngOnInit(){
 
@@ -26,6 +27,8 @@ export class CardComponent implements OnInit{
             this.username='';
             this.pass='';
             alert('done');
+            AppComponent.prototype.taggle=false;
+            
 
         }
     else

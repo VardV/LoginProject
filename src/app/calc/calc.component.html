@@ -1,0 +1,34 @@
+<table border="1">
+    <tr>
+       <td colspan="3"><input type="text" value={{input}} /></td>
+       <!--<td colspan="3"><input type="text"  />{{result}}</td>-->
+       <!-- clr() function will call clr to clear all value -->
+       <td><button type="button"(click)=cl()>{{clear}}</button></td>
+    </tr>
+    <tr>
+       <!-- create button and assign value to each button -->
+       <!-- dis("1") will call function dis to display value -->
+       <td><button type="button" #but (click)=presNum(num1)>{{num1}}</button> </td>
+       <td><button type="button"  (click)=presNum(num2)>{{num2}}</button> </td>
+       <td><button type="button"  (click)=presNum(num3)>{{num3}}</button> </td>
+       <td><button type="button"  (click)=presNum(div)>{{div}}</button> </td>
+    </tr>
+    <tr>
+       <td><button type="button"  (click)=presNum(num4)>{{num4}}</button> </td>
+       <td><button type="button"  (click)=presNum(num5)>{{num5}}</button> </td>
+       <td><button type="button"  (click)=presNum(num6)>{{num6}}</button> </td>
+       <td><button type="button"  (click)=presNum(mmin)>{{mmin}}</button> </td>
+    </tr>
+    <tr>
+        <td><button type="button"  (click)=presNum(num7)>{{num7}}</button> </td>
+        <td><button type="button"  (click)=presNum(num8)>{{num8}}</button> </td>
+        <td><button type="button"  (click)=presNum(num9)>{{num9}}</button> </td>
+        <td><button type="button"  (click)=presNum(sum)>{{sum}}</button> </td>
+    </tr>
+    <tr>
+        <td><button type="button"  (click)=presNum(point)>{{point}}</button> </td>
+        <td><button type="button"  (click)=presNum(num0)>{{num0}}</button> </td>
+        <td><button type="button"  (click)=solv()>{{eq}}</button> </td>
+        <td><button type="button"  (click)=presNum(mult)>{{mult}}</button> </td>
+    </tr>
+ </table>
